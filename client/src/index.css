@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-image: url(./assets/Background.svg);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #414c5e;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5b677a;
+  }
+
+  .logo {
+    transition: filter 500ms;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    cursor: pointer;
+  }
+
+  .gradient-animation {
+    flex: 1 1 auto;
+    text-align: center;
+    transition: 0.5s;
+    background: linear-gradient(
+        90deg,
+        var(--c1, transparent),
+        var(--c2, transparent) 51%,
+        var(--c1, #f6d365)
+      )
+      var(--x, 0) / 200%;
+    color: black;
+    box-shadow: 0 0 15px #eee;
+    border-radius: 10px;
+  }
+
+  .gradient-animation:hover {
+    --x: 100%;
+    box-shadow: 0 0 30px #eee;
+  }
+
+  .link {
+    transition: text-shadow 0.3s;
+  }
+
+  .link:hover {
+    text-shadow: 0 0 15px #8fd3f4;
+  }
+
+  .gradient-button {
+    --c1: #84fab0;
+    --c2: #8fd3f4;
+  }
+
+  .reveal {
+    color: #0000;
+    background: linear-gradient(#8fd3f4 0 0) no-repeat,
+      linear-gradient(rgba(255, 255, 255, 0.87) 0 0) no-repeat;
+    background-size: 0% 100%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    animation: t 1.2s 0.7s both, b 1.2s 1.3s both;
+  }
+  .clone {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  @keyframes t {
+    to {
+      background-size: 150% 100%;
+    }
+  }
+
+  @keyframes b {
+    to {
+      background-position: -200% 0, 0 0;
+    }
+  }
+}
