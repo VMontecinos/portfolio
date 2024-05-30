@@ -17,7 +17,7 @@ const About = () => {
       <section className="">
         <h1 className="text-7xl">
           <span className="reveal clone">
-            Hi! I'm <strong className="text-indigo-400">Valentino</strong>
+            Hi! I'm <strong>Valentino</strong>
           </span>{" "}
           🎇
         </h1>
