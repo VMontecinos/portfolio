@@ -4,4 +4,4 @@ This repository hosts my portfolio, including my current projects
 
 ## Techs
 
-TBD
+React, Typescript, Tailwind, Framer Motion
