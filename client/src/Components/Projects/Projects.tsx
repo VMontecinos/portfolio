@@ -1,5 +1,9 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import React from "../../assets/React.svg";
+import Redux from "../../assets/Redux.svg";
+import Nodejs from "../../assets/Nodejs.svg";
+import Tailwind from "../../assets/Tailwind.svg";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -10,13 +14,11 @@ const Projects = () => {
       className="flex flex-col items-center gap-y-12 mt-[100px]"
       id="projects"
     >
-      <h1 className="text-5xl">
-        My projects (<span className="font-ubuntu">so far</span>)
-      </h1>
+      <h1 className="mt-28 text-5xl">My projects</h1>
       <div className="flex justify-evenly w-full" ref={ref}>
         <div
           id="project-1"
-          className={`flex flex-col hover:card-shadow items-center text-center bg-opacity-40 border-2 border-emerald-300 bg-emerald-400 hover:bg-opacity-50 rounded-md opacity-75 hover:opacity-100 scale-95 hover:scale-100 transition duration-300 max-w-[400px] max-h-[600px] ${
+          className={`flex flex-col hover:card-shadow items-center text-start bg-opacity-40 border-2 border-emerald-300 bg-emerald-400 hover:bg-opacity-50 rounded-md opacity-75 hover:opacity-100 scale-95 hover:scale-100 transition duration-300 max-w-[400px] max-h-[600px] ${
             isInView ? "" : "translate-y-[200px]"
           }`}
         >
@@ -34,20 +36,21 @@ const Projects = () => {
           >
             Starwork 🌟
           </a>
-          <div className="py-4 flex flex-col gap-y-2">
+          <div className="p-4 flex flex-col gap-y-2">
             <p>
               This is a group project I developed for a startup company called
               Starwork as a final project for Soy Henry's bootcamp.
             </p>
-            <p>
-              The front end of this app was developed with React, Redux and
-              Tailwind.
-            </p>
+            <div className="flex justify-evenly">
+              <img src={React} className="size-12" alt="" />
+              <img src={Redux} className="size-12" alt="" />
+              <img src={Tailwind} className="size-12" alt="" />
+            </div>
           </div>
         </div>
         <div
           id="project-2"
-          className={`flex flex-col hover:card-shadow items-center text-center bg-opacity-40 border-2 border-emerald-300 bg-emerald-400 hover:bg-opacity-50 rounded-md opacity-75 hover:opacity-100 scale-95 hover:scale-100 transition duration-300 max-w-[400px] max-h-[600px] ${
+          className={`flex flex-col hover:card-shadow items-center text-start bg-opacity-40 border-2 border-emerald-300 bg-emerald-400 hover:bg-opacity-50 rounded-md opacity-75 hover:opacity-100 scale-95 hover:scale-100 transition duration-300 max-w-[400px] max-h-[600px] ${
             isInView ? "" : "translate-y-[200px]"
           }`}
         >
@@ -64,12 +67,16 @@ const Projects = () => {
           >
             Gameware 🎮
           </a>
-          <div className="py-4 flex flex-col gap-y-2">
+          <div className="p-4 flex flex-col gap-y-2">
             <p>
               This is an individual project developed for the Soy Henry's
               bootcamp using RAWG's API.
             </p>
-            <p>This app was developed using React, Redux and vanilla CSS. </p>
+            <div className="flex justify-evenly">
+              <img src={React} className="size-12" alt="" />
+              <img src={Redux} className="size-12" alt="" />
+              <img src={Nodejs} className="size-12" alt="" />
+            </div>
           </div>
         </div>
       </div>

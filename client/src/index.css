@@ -39,12 +39,13 @@
   }
 
   .logo {
-    transition: filter 500ms;
+    transition: all 500ms;
   }
 
   .logo:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
     cursor: pointer;
+    transform: rotate(90deg);
   }
 
   .gradient-animation {

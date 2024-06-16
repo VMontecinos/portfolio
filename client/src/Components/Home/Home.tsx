@@ -1,18 +1,18 @@
 import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import Contact from "../Contact/Contact";
 import Techs from "../Techs/Techs";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <Navbar />
-      <div className="w-full mt-[310px]">
+      <div className="w-full">
         <About />
-        <Techs />
         <Projects />
-        <Contact />
+        <Techs />
+        <Footer />
       </div>
     </div>
   );

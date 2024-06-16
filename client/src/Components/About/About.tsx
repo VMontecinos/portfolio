@@ -1,5 +1,6 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Contact from "../Contact/Contact";
 
 const About = () => {
   const wrapRef = useRef(null);
@@ -14,7 +15,7 @@ const About = () => {
       id="about"
       ref={wrapRef}
     >
-      <section className="">
+      <section className="mt-[310px]">
         <h1 className="text-7xl">
           <span className="reveal clone">
             Hi! I'm <strong>Valentino</strong>
@@ -31,11 +32,12 @@ const About = () => {
         >
           Full Stack Dev 👨‍💻
         </h2>
+        <Contact />
       </section>
       <section className="mt-[200px] flex flex-col items-end" ref={sectionRef}>
         <h1 className="text-6xl">
           <span className={isSectionInView ? "reveal clone duration-100" : ""}>
-            What do I do?
+            Who am I?
           </span>{" "}
           🤔
         </h1>
@@ -47,9 +49,10 @@ const About = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
           }}
         >
-          As a Full Stack dev, I enjoy doing both front and back end code,{" "}
-          <i className="font-ubuntu">but...</i> I admit I'm more of a Front end
-          guy.
+          Self taught, Front End oriented, 18 years old.
+          <p className="font-semibold">
+            Open to work, feel free to contact me!
+          </p>
         </p>
       </section>
     </div>
