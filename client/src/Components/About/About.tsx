@@ -11,19 +11,19 @@ const About = () => {
 
   return (
     <div
-      className="p-4 px-16 flex flex-col justify-between"
+      className="p-4 px-8 sm:px-16 flex flex-col justify-between"
       id="about"
       ref={wrapRef}
     >
-      <section className="mt-[310px]">
-        <h1 className="text-7xl">
+      <section className="sm:mt-[310px] mt-[200px]">
+        <h1 className="sm:text-7xl text-4xl">
           <span className="reveal clone">
             Hi! I'm <strong>Valentino</strong>
           </span>{" "}
           🎇
         </h1>
         <h2
-          className="text-5xl font-ubuntu"
+          className="sm:text-5xl text-2xl font-ubuntu"
           style={{
             transform: isWrapInView ? "none" : "translateX(-200px)",
             opacity: isWrapInView ? 1 : 0,
@@ -49,7 +49,7 @@ const About = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
           }}
         >
-          Self taught, Front End oriented, 18 years old.
+          Self taught, Front End oriented, 19 years old.
           <p className="font-semibold">
             Open to work, feel free to contact me!
           </p>
